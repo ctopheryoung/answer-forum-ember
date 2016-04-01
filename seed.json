@@ -18,7 +18,7 @@
 	"questions": [{
 		"user": "BerdieSanders2016",
 		"date": "March 31, 2016",
-    "question": "Is this presdiential election yuge or what?!",
+    "title": "Is this presdiential election yuge or what?!",
     "note": "Seriously you guys, this is crazy. Is it me or is this election season just crazy?",
 		"answers": {
 			"0": true,
@@ -27,21 +27,21 @@
 	}, {
     "user": "masterOFnone",
 		"date": "March 29, 2016",
-    "question": "What pasta shape is the best pasta shape?",
+    "title": "What pasta shape is the best pasta shape?",
     "note": "I was pretty sure it was Penne but then I realized that a hollow tube is the worst design for pasta ever. Now I'm just confused. Can anyone shed some light on the situation?",
 		"answers": {
 		}
 	}, {
     "user": "confusedAPE1914",
 		"date": "March 15, 2016",
-    "question": "What does it all mean?",
+    "title": "What does it all mean?",
     "note": "I'm pretty confused. Is there a point to any of this?",
 		"answers": {
 		}
 	}, {
     "user": "poortlander239",
 		"date": "March 27, 2016",
-    "question": "Is it safe to swim in the Willamete River?",
+    "title": "Is it safe to swim in the Willamete River?",
     "note": "It looks so inviting and it's so convenitently located. But I'm worried that it's levels of toxins might not be healthy.",
 		"answers": {
 			"2": true
