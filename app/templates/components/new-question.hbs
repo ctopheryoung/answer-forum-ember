@@ -1,5 +1,6 @@
-{{#if updateQuestionForm}}
-  <h4>Edit Question:</h4>
+{{#if newQuestionForm}}
+  <h4>New Question:</h4>
+
   <div>
     <form>
 
@@ -20,13 +21,14 @@
 
       <div class="form-group">
         <label for="question">Date</label>
-        {{input type="text" value=date class="form-control" id="date" placeholder=question.date}}
+        {{input type="date" value=date class="form-control" id="date" placeholder=question.date}}
       </div>
 
 
-      <button class="btn btn-sm btn-success" {{action 'updateQuestion' question}}>Save</button>
+      <button {{action 'saveQuestion'}}>Save</button>
     </form>
   </div>
+
 {{else}}
-  <button class="btn btn-sm btn-warning" {{action 'updateQuestionForm'}}>Edit</button>
+  <button class="btn btn-sm btn-default" {{action 'newQuestionForm'}}>Ask a Question</button>
 {{/if}}
