@@ -1,1 +1,5 @@
-{{link-to 'About Halp Plz' 'about'}}
+{{link-to 'About Plz Halp' 'about'}}
+
+{{#each model.questions as |question|}}
+  {{question-tile question=question}}
+{{/each}}
