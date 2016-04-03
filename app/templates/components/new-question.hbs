@@ -5,27 +5,27 @@
     <form>
 
       <div class="form-group">
-        <label for="question">Question</label>
-        {{input type="text" value=title class="form-control" id="title" placeholder=question.title}}
+        <label for="title">Question</label>
+        {{input type="text" value=title class="form-control" id="title"}}
       </div>
 
       <div class="form-group">
         <label for="note">Question Details</label>
-        {{textarea type="text" value=note class="form-control" id="note" placeholder=question.note}}
+        {{textarea type="text" value=note class="form-control" id="note"}}
       </div>
 
       <div class="form-group">
         <label for="user">User</label>
-        {{input type="text" value=user class="form-control" id="user" placeholder=question.user}}
+        {{input type="text" value=user class="form-control" id="user"}}
       </div>
 
       <div class="form-group">
-        <label for="question">Date</label>
-        {{input type="date" value=date class="form-control" id="date" placeholder=question.date}}
+        <label for="date">Date</label>
+        {{input type="date" value=date class="form-control" id="date"}}
       </div>
 
 
-      <button {{action 'saveQuestion'}}>Save</button>
+      <button class="btn btn-sm btn-info" {{action 'saveQuestion'}}>Save</button>
     </form>
   </div>
 

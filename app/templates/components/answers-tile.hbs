@@ -1,0 +1,13 @@
+<h3>Answers:</h3>
+{{#if question.answers}}
+  {{#each question.answers as |answer|}}
+    <div>
+      <p>On {{answer.date}} {{answer.user}} replied:</p>
+      <p>{{answer.reply}}</p>
+      {{manage-answer answer=answer updateAnswer="updateAnswer"}}
+    </div>
+  {{/each}}
+{{else}}
+<p>No one has answered this question yet.</p>
+{{/if}}
+{{new-answer newAnswer="newAnswer" question=question}}

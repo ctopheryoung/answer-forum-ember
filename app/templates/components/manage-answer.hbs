@@ -1,0 +1,5 @@
+<button class="btn btn-sm btn-primary" {{action 'manageAnswerToggle'}}>Manage Answer</button>
+{{#if manageAnswerLinks}}
+  {{answer-edit answer=answer updateAnswer="updateAnswer"}}
+  <button class="btn btn-sm btn-danger" {{action 'deleteAnswer' answer}}>Delete</button>
+{{/if}}
