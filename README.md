@@ -1,6 +1,6 @@
-# Plz Halp
+# collab.
 
-This is an Ember Web Application that allows users to post and answer questions. It utilizes a Firebase database and Ember data to implement relational data storage.
+This is an Ember Web Application that allows users to post and answer questions. It utilizes Firebase and Ember data to implement relational data storage.
 
 ## Prerequisites
 

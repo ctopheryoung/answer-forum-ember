@@ -7,12 +7,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {{#link-to 'index' class="navbar-brand"}}COLAB{{/link-to}}
+      {{#link-to 'index' class="navbar-brand"}}collab.{{/link-to}}
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav">
             {{#link-to 'index' tagName="li"}}<a href="">Home</a>{{/link-to}}
+            {{#link-to 'new-question' tagName="li"}}<a href="">Ask a Question</a>{{/link-to}}
             {{#link-to 'about' tagName="li"}}<a href="">About</a>{{/link-to}}
       </ul>
     </div><!-- /.navbar-collapse -->

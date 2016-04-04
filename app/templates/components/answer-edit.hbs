@@ -10,15 +10,15 @@
 
       <div class="form-group">
         <label for="date">Date</label>
-        {{textarea type="date" value=date class="form-control" id="date" placeholder=answer.date}}
+        {{input type="date" value=date class="form-control" id="date" placeholder=answer.date}}
       </div>
 
       <div class="form-group">
         <label for="reply">Answer</label>
-        {{input type="text" value=reply class="form-control" id="reply" placeholder=answer.reply}}
+        {{textarea type="text" value=reply class="form-control" id="reply" placeholder=answer.reply}}
       </div>
 
-      <button class="btn btn-sm btn-success" {{action 'updateAnswer' question}}>Save Changes</button>
+      <button class="btn btn-sm btn-success" {{action 'updateAnswer' answer}}>Save Changes</button>
     </form>
   </div>
 {{else}}
