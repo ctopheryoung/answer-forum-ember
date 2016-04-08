@@ -1,4 +1,7 @@
-<div class="question-tile">
-  <h3>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</h3>
-  <p>Asked by user {{question.user}} on {{question.date}}.</p>
-</div>
+{{#paper-item class="md-3-line" param=question action="goToQuestion"}}
+  <img src={{item.face}} alt={{item.who}} class="md-avatar">
+  <div class="md-list-item-text">
+    <h3>{{question.title}}</h3>
+    <h4>Asked by: <i>{{question.user}}</i> on {{question.date}}</h4>
+  </div>
+{{/paper-item}}

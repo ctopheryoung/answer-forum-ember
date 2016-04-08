@@ -1,1 +1,11 @@
 @import 'ember-paper';
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      width: 90px;
+      height: auto;
+    }
+}
