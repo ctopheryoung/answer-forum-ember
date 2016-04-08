@@ -4,7 +4,7 @@ export function questionIcon(params) {
   var question = params[0];
 
   if(question.get('answers').get('length') === 0) {
-    return Ember.String.htmlSafe('<p>New!</p>');
+    return Ember.String.htmlSafe('<p>Needs an answer!</p>');
   }
 }
 
