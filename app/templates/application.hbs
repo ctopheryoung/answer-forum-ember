@@ -1,4 +1,23 @@
-{{partial 'navbar'}}
-<div class="container">
-  {{outlet}}
-</div>
+{{#paper-nav-container}}
+  {{#paper-sidenav class="md-sidenav-left md-whiteframe-z2" locked-open="gt-sm"}}
+    {{#paper-toolbar}}
+      <div class="md-toolbar-tools">
+        <div class="logo">
+          <img src="assets/logo.png" height="50"/>
+        </div>
+      </div>
+    {{/paper-toolbar}}
+
+    {{#paper-content}}
+      {{#paper-list}}
+        {{#paper-item action="transitionTo" param="index"}}Home{{/paper-item}}
+        {{#paper-item action="transitionTo" param="about"}}About{{/paper-item}}
+        {{#paper-item action="transitionTo" param="new-question"}}Ask a Question{{/paper-item}}
+      {{/paper-list}}
+    {{/paper-content}}
+  {{/paper-sidenav}}
+
+  <div layout="column" tabindex="-1" role="main" flex>
+    {{outlet}}
+  </div>
+{{/paper-nav-container}}

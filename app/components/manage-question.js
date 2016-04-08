@@ -5,6 +5,7 @@ export default Ember.Component.extend({
   actions: {
     updateQuestion(question, params) {
       this.sendAction('updateQuestion', question, params);
+      this.set('manageQuestionLinks', false);
     },
     manageQuestionToggle: function() {
       this.toggleProperty('manageQuestionLinks');

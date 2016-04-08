@@ -4,7 +4,14 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'answer-forum',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self' fonts.gstatic.com",
+      'img-src': "'self' data:",
+      'media-src': "'self'",
+      'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com"
+    },
     firebase: 'https://answer-forum.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',

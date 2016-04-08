@@ -1,26 +1,9 @@
-<h4>New Question:</h4>
-<div>
-  <form>
-    <div class="form-group">
-      <label for="title">Question</label>
-      {{input type="text" value=title class="form-control" id="title"}}
-    </div>
-
-    <div class="form-group">
-      <label for="note">Question Details</label>
-      {{textarea type="text" value=note class="form-control" id="note"}}
-    </div>
-
-    <div class="form-group">
-      <label for="user">User</label>
-      {{input type="text" value=user class="form-control" id="user"}}
-    </div>
-
-    <div class="form-group">
-      <label for="date">Date</label>
-      {{input type="date" value=date class="form-control" id="date"}}
-    </div>
-
-    <button class="btn btn-sm btn-info" {{action 'saveQuestion'}}>Save</button>
-  </form>
+<h4>Ask something:</h4>
+<div class="doc-content">
+  <div layout="" layout-sm="column">
+    {{paper-input flex=20 label="Username" value=user}}
+    {{paper-input flex=80 label="Question" value=title}}
+  </div>
+  {{paper-input label="Details" textarea=true value=note}}
+  {{#paper-button primary=true raised=true action='saveQuestion'}}Save Question{{/paper-button}}
 </div>

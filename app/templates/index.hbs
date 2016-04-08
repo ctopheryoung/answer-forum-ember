@@ -1,5 +1,13 @@
-{{#each model.questions as |question|}}
-  {{question-tile question=question}}
-{{/each}}
+{{page-toolbar pageName="Home"}}
 
-{{question-form-control saveQuestion="saveQuestion"}}
+{{#paper-content class="md-padding"}}
+<div class="doc-content">
+
+  {{#each model.questions as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+
+  {{question-form-control saveQuestion="saveQuestion"}}
+
+</div>
+{{/paper-content}}

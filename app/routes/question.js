@@ -12,7 +12,16 @@ export default Ember.Route.extend({
         }
       });
       question.save();
-      this.transitionTo('index');
+      this.transitionTo('question', question.id);
+    },
+    updateAnswer(answer, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key] !==undefined && params[key] !=="") {
+          answer.set(key, params[key]);
+        }
+      });
+      answer.save();
+      this.transitionTo('question', answer_id);
     },
     newAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);

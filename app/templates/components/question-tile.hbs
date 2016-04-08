@@ -1,4 +1,4 @@
 <div class="question-tile">
-  {{#link-to 'question' question.id}}<h3>{{question.title}}</h3>{{/link-to}}
+  <h3>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</h3>
   <p>Asked by user {{question.user}} on {{question.date}}.</p>
 </div>

@@ -1,4 +1,12 @@
-<h3>{{model.title}}</h3>
-{{question-detail question=model}}
-{{manage-question question=model updateQuestion="updateQuestion"}}
-{{answers-tile updateAnswer="updateAnswer" newAnswer="newAnswer" question=model}}
+{{page-toolbar pageName="Question Details"}}
+
+{{#paper-content class="md-padding"}}
+<div class="doc-content">
+
+  <h3>{{model.title}}</h3>
+  {{question-detail question=model}}
+  {{manage-question question=model updateQuestion="updateQuestion"}}
+  {{answers-tile updateAnswer="updateAnswer" newAnswer="newAnswer" question=model}}
+
+</div>
+{{/paper-content}}
