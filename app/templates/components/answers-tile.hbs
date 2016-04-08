@@ -1,5 +1,5 @@
 {{#if question.answers}}
-    {{#paper-subheader}}Answers (sorted by highest scoring first){{/paper-subheader}}
+    {{#paper-subheader}}{{answerCount}} (sorted by highest scoring first){{/paper-subheader}}
 
     {{#paper-list}}
       {{#each sortedAnswers as |answer|}}
@@ -13,7 +13,7 @@
             <p><em>Posted by {{answer.user}} on {{answer.date}}</em></p>
           </div>
         {{/paper-item}}
-        {{paper-divider inset=true}}
+        {{paper-divider}}
       {{/each}}
     {{/paper-list}}
   {{else}}
