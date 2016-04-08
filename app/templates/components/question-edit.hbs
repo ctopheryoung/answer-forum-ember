@@ -1,32 +1,10 @@
+{{#paper-button warn=true action='updateQuestionForm'}}Edit Question{{/paper-button}}
+
 {{#if updateQuestionForm}}
-  <h4>Edit Question:</h4>
-  <div>
-    <form>
-
-      <div class="form-group">
-        <label for="question">Question</label>
-        {{input type="text" value=title class="form-control" id="title" placeholder=question.title}}
-      </div>
-
-      <div class="form-group">
-        <label for="note">Question Details</label>
-        {{textarea type="text" value=note class="form-control" id="note" placeholder=question.note}}
-      </div>
-
-      <div class="form-group">
-        <label for="user">User</label>
-        {{input type="text" value=user class="form-control" id="user" placeholder=question.user}}
-      </div>
-
-      <div class="form-group">
-        <label for="question">Date</label>
-        {{input type="text" value=date class="form-control" id="date" placeholder=question.date}}
-      </div>
-
-
-      <button class="btn btn-sm btn-success" {{action 'updateQuestion' question}}>Save Changes</button>
-    </form>
+  <div layout="" layout-sm="column">
+    {{paper-input flex=20 id=user label="Username" value=question.user}}
+    {{paper-input flex=80 id=title label="Question" value=question.title}}
   </div>
-{{else}}
-  <button class="btn btn-sm btn-warning" {{action 'updateQuestionForm'}}>Edit</button>
+  {{paper-input label="Details" id=note textarea=true value=question.note}}
+  {{#paper-button primary=true raised=true action='updateQuestion' param=question}}Save Question{{/paper-button}}
 {{/if}}

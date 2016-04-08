@@ -1,7 +1,8 @@
 {{#paper-item class="md-3-line" param=question action="goToQuestion"}}
-  <img src={{item.face}} alt={{item.who}} class="md-avatar">
+  {{paper-icon "question-answer"}}
   <div class="md-list-item-text">
     <h3>{{question.title}}</h3>
     <h4>Asked by: <i>{{question.user}}</i> on {{question.date}}</h4>
   </div>
+  {{paper-divider}}
 {{/paper-item}}

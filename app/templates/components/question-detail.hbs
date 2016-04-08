@@ -1,3 +1,8 @@
-<p>{{question.note}}</p>
-<p>Asked by: {{question.user}}</p>
-<p>Date asked: {{question.date}}</p>
+{{#paper-card}}
+  {{#paper-card-content}}
+    <h3>{{question.title}}</h3>
+    <p>{{question.note}}</p>
+    <p>Asked by <i>{{question.user}}</i> on {{question.date}}</p>
+    {{question-edit  updateQuestion='updateQuestion' question=question}}
+  {{/paper-card-content}}
+{{/paper-card}}

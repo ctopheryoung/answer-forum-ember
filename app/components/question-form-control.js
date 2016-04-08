@@ -1,9 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  newQuestionForm: false,
   actions: {
     newQuestionForm() {
-      this.set('newQuestionForm', true);
+      this.toggleProperty('newQuestionForm');
     },
     saveQuestion(params) {
       this.sendAction('saveQuestion', params);

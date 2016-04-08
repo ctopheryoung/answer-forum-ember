@@ -1,13 +1,12 @@
-{{page-toolbar pageName="Home"}}
+{{page-toolbar pageName="Hello and welcome."}}
 {{#paper-content class="md-padding"}}
+  <p>We're a community of humans working together to ask questions and answer them. Click on a question below to view it's details and post your answer. Or, if you are searching for an answer, post your own question.</p>
 
-  <h3>Hello and Welcome to collab.</h3>
-  <p>We're a community of humans working together to ask questions and answer them. Click on a question below to view it's details and post your answer. Or, if you are searching for an answer, post your own question!</p>
-  {{question-form-control saveQuestion="saveQuestion"}}
-  {{#paper-subheader class="md-no-sticky"}}Explore Questions:{{/paper-subheader}}
+  {{#paper-subheader class="md-no-sticky"}}Read and Answer Questions:{{/paper-subheader}}
   {{#paper-list}}
     {{#each model.questions as |question|}}
       {{question-tile question=question goToQuestion="goToQuestion"}}
     {{/each}}
   {{/paper-list}}
+  {{question-form-control saveQuestion="saveQuestion"}}
 {{/paper-content}}

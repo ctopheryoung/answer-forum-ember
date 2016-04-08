@@ -1,5 +1,4 @@
+{{#paper-button primary=true raised=true action="newQuestionForm"}}Add a Question{{/paper-button}}
 {{#if newQuestionForm}}
   {{new-question saveQuestion="saveQuestion"}}
-{{else}}
-  <button class="btn btn-lg btn-info" {{action 'newQuestionForm'}}>Ask a Question</button>
 {{/if}}
