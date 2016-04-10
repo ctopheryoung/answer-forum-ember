@@ -1,10 +1,9 @@
 {{#paper-item class="md-3-line" param=question action="goToQuestion"}}
   {{paper-icon 'question-answer' size=2}}
   <div class="md-list-item-text">
-    {{questionIcon question}}
     <h3>{{question.title}}</h3>
     <h4>Asked by: <i>{{question.user}}</i> on {{question.date}}</h4>
-    <p>{{answerCount}}</p>
+    <p>{{answerCount}} {{questionIcon question}}</p>
   </div>
   {{paper-divider}}
 {{/paper-item}}

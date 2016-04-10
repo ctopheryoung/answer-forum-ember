@@ -8,6 +8,10 @@
           <div class="score">
             <p><span class="number">{{answer.score}}</span><br>points</p>
           </div>
+          <div class="votes">
+            {{paper-icon "arrow-drop-up" action="upVote" param=answer}}<br>
+            {{paper-icon "arrow-drop-down" action="up=downVote" param=answer}}
+          </div>
           <div class="md-list-item-text">
             <h3>{{answer.reply}}</h3>
             <p><em>Posted by {{answer.user}} on {{answer.date}}</em></p>

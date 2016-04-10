@@ -22,3 +22,22 @@ $primary: "blue";
     font-size: 36px;
   }
 }
+
+.noAnswerFlag {
+  color: red;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.votes {
+  margin-left: -15px;
+  padding-right: 10px;
+  padding-top: 20px;
+  .up-vote{
+    margin-bottom: -5px;
+  }
+}
+
+.md-list-item.md-2-line .md-list-item-text h3, md-list-item.md-2-line > .md-no-style .md-list-item-text h3, md-list-item.md-3-line .md-list-item-text h3, md-list-item.md-3-line > .md-no-style .md-list-item-text h3 {
+  line-height: 1;
+}
