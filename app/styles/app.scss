@@ -41,3 +41,13 @@ $primary: "blue";
 .md-list-item.md-2-line .md-list-item-text h3, md-list-item.md-2-line > .md-no-style .md-list-item-text h3, md-list-item.md-3-line .md-list-item-text h3, md-list-item.md-3-line > .md-no-style .md-list-item-text h3 {
   line-height: 1;
 }
+
+.upVote :hover {
+  cursor: pointer;
+  color: #2196F3;
+}
+
+.downVote :hover {
+  cursor: pointer;
+  color: #F44336;
+}

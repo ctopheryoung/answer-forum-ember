@@ -1,6 +1,6 @@
-{{#paper-button primary=true raised=true action='answerQuestionForm' param=question}}Add Answer{{/paper-button}}
+{{#paper-button primary=true action='answerQuestionForm' }}Add Answer{{/paper-button}}
 {{#if answerQuestionForm}}
-    {{paper-input label="Username" value=user}}
-    {{paper-input textarea=true label="Answer" value=reply}}
-  <button class="btn btn-sm btn-info" {{action 'newAnswer'}}>Save</button>
+  {{paper-input label="Username" value=user}}
+  {{paper-input textarea=true label="Answer" value=reply}}
+  {{#paper-button primary=true raised=true action='newAnswer'}}Save{{/paper-button}}
 {{/if}}

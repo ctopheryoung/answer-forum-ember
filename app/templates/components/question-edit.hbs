@@ -1,7 +1,8 @@
 {{#paper-button warn=true action='updateQuestionForm'}}Edit Question{{/paper-button}}
 
 {{#if updateQuestionForm}}
-  <div layout="" layout-sm="column">
+
+  <div>
     {{paper-input flex=20 id=user label="Username" value=question.user}}
     {{paper-input flex=80 id=title label="Question" value=question.title}}
   </div>

@@ -9,8 +9,8 @@
             <p><span class="number">{{answer.score}}</span><br>points</p>
           </div>
           <div class="votes">
-            {{paper-icon "arrow-drop-up" action="upVote" param=answer}}<br>
-            {{paper-icon "arrow-drop-down" action="up=downVote" param=answer}}
+            <a class="upVote" {{action "upVote" answer}}>{{paper-icon "arrow-drop-up"}}</a><br>
+            <a class="downVote" {{action "downVote" answer}}>{{paper-icon "arrow-drop-down"}}</a>
           </div>
           <div class="md-list-item-text">
             <h3>{{answer.reply}}</h3>

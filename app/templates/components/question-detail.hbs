@@ -4,5 +4,6 @@
     <p>{{question.note}}</p>
     <p>Asked by <i>{{question.user}}</i> on {{question.date}}</p>
     {{question-edit  updateQuestion='updateQuestion' question=question}}
+    {{new-answer newAnswer='newAnswer' question=question}}
   {{/paper-card-content}}
 {{/paper-card}}
