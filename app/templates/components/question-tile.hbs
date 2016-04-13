@@ -5,5 +5,8 @@
     <h4>Asked by: <i>{{question.user}}</i> on {{question.date}}</h4>
     <p>{{questionIcon question}}</p>
   </div>
+  {{#paper-button icon-button=true action='starQuestion' param=question}}
+    {{paper-icon "star"}}
+  {{/paper-button}}
   {{paper-divider}}
 {{/paper-item}}

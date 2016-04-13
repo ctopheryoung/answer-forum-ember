@@ -1,0 +1,11 @@
+{{#if starredQuestions.questions}}
+  {{paper-divider}}
+  {{#paper-subheader}}Starred Questions:{{/paper-subheader}}
+  {{#paper-list}}
+    {{#each starredQuestions.questions as |question|}}
+      {{#paper-item action="transitionToQuestion" param=question}}
+        <p>{{question.title}}</p>
+      {{/paper-item}}
+    {{/each}}
+  {{/paper-list}}
+{{/if}}
